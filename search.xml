@@ -1,47 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>Android开发分类</title>
-    <url>/2024/03/20/android-category/</url>
-    <content><![CDATA[<p>主要包含以下技术专题：</p>
-<ol>
-<li>Kotlin&#x2F;Java 开发</li>
-<li>Android 架构设计</li>
-<li>性能优化</li>
-<li>组件化实践</li>
-</ol>
-]]></content>
-      <categories>
-        <category>技术分类</category>
-      </categories>
-      <tags>
-        <tag>Android</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>iOS开发分类</title>
-    <url>/2024/03/20/ios-category/</url>
-    <content><![CDATA[<p>主要包含以下技术专题：</p>
-<ol>
-<li>Swift&#x2F;Objective-C 开发</li>
-<li>iOS 架构设计</li>
-<li>性能优化</li>
-<li>组件化实践</li>
-</ol>
-]]></content>
-      <categories>
-        <category>技术分类</category>
-      </categories>
-      <tags>
-        <tag>iOS</tag>
-      </tags>
-  </entry>
-  <entry>
     <title></title>
     <url>/2024/12/05/index/</url>
     <content><![CDATA[<h1 id="吴雪松-资深移动开发工程师"><a href="#吴雪松-资深移动开发工程师" class="headerlink" title="吴雪松 - 资深移动开发工程师"></a>吴雪松 - 资深移动开发工程师</h1><h2 id="一、个人信息"><a href="#一、个人信息" class="headerlink" title="一、个人信息"></a>一、个人信息</h2><ul>
 <li><strong>电话</strong>：13488746143</li>
-<li><strong>邮箱</strong>：<a href="mailto:&#x42;&#84;&#x38;&#x35;&#x30;&#52;&#x39;&#x35;&#x32;&#50;&#64;&#71;&#77;&#65;&#x49;&#76;&#x2e;&#x43;&#79;&#77;">&#x42;&#84;&#x38;&#x35;&#x30;&#52;&#x39;&#x35;&#x32;&#50;&#64;&#71;&#77;&#65;&#x49;&#76;&#x2e;&#x43;&#79;&#77;</a></li>
+<li><strong>邮箱</strong>：<a href="mailto:&#66;&#x54;&#56;&#53;&#48;&#52;&#57;&#53;&#50;&#x32;&#x40;&#x47;&#x4d;&#65;&#73;&#x4c;&#46;&#67;&#79;&#x4d;">&#66;&#x54;&#56;&#53;&#48;&#52;&#57;&#53;&#50;&#x32;&#x40;&#x47;&#x4d;&#65;&#73;&#x4c;&#46;&#67;&#79;&#x4d;</a></li>
 <li><strong>GitHub</strong>：HTTPS:&#x2F;&#x2F;GITHUB.COM&#x2F;LALALUYA</li>
 </ul>
 <h2 id="二、求职意向"><a href="#二、求职意向" class="headerlink" title="二、求职意向"></a>二、求职意向</h2><p>资深移动开发工程师，专注于iOS和安卓平台应用开发，致力于运用前沿技术打造高质量、用户体验卓越的移动应用。</p>
@@ -111,5 +75,41 @@
 <li>对新技术保持高度热情与敏锐洞察力，持续学习并积极探索前沿技术在移动应用领域的应用，致力于为企业创造更大价值。</li>
 </ul>
 ]]></content>
+  </entry>
+  <entry>
+    <title>iOS开发分类</title>
+    <url>/2024/03/20/ios-category/</url>
+    <content><![CDATA[<p>主要包含以下技术专题：</p>
+<ol>
+<li>Swift&#x2F;Objective-C 开发</li>
+<li>iOS 架构设计</li>
+<li>性能优化</li>
+<li>组件化实践</li>
+</ol>
+]]></content>
+      <categories>
+        <category>技术分类</category>
+      </categories>
+      <tags>
+        <tag>iOS</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Android开发分类</title>
+    <url>/2024/03/20/android-category/</url>
+    <content><![CDATA[<p>主要包含以下技术专题：</p>
+<ol>
+<li>Kotlin&#x2F;Java 开发</li>
+<li>Android 架构设计</li>
+<li>性能优化</li>
+<li>组件化实践</li>
+</ol>
+]]></content>
+      <categories>
+        <category>技术分类</category>
+      </categories>
+      <tags>
+        <tag>Android</tag>
+      </tags>
   </entry>
 </search>
