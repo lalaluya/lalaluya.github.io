@@ -1,0 +1,225 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>移动开发技术分享 | 移动开发技术分享</title><meta name="author" content="lalaluya"><meta name="copyright" content="lalaluya"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="吴雪松 - 资深移动开发工程师一、个人信息 电话：13488746143 邮箱：&#x42;&#84;&#x38;&#x35;&#x30;&#x34;&#x39;&#53;&#50;&#50;&#64;&#x47;&#x4d;&#65;&#x49;&#76;&#46;&#67;&#x4f;&#x4d; GitHub：HTTPS:&#x2F;&#x2F;GITHUB.COM&#x2F;LALALUY">
+<meta property="og:type" content="article">
+<meta property="og:title" content="移动开发技术分享">
+<meta property="og:url" content="http://example.com/2024/12/05/index/index.html">
+<meta property="og:site_name" content="移动开发技术分享">
+<meta property="og:description" content="吴雪松 - 资深移动开发工程师一、个人信息 电话：13488746143 邮箱：&#x42;&#84;&#x38;&#x35;&#x30;&#x34;&#x39;&#53;&#50;&#50;&#64;&#x47;&#x4d;&#65;&#x49;&#76;&#46;&#67;&#x4f;&#x4d; GitHub：HTTPS:&#x2F;&#x2F;GITHUB.COM&#x2F;LALALUY">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://example.com/img/butterfly-icon.png">
+<meta property="article:published_time" content="2024-12-05T02:24:49.090Z">
+<meta property="article:modified_time" content="2024-12-05T03:18:20.595Z">
+<meta property="article:author" content="lalaluya">
+<meta property="article:tag" content="移动开发">
+<meta property="article:tag" content="iOS">
+<meta property="article:tag" content="Android">
+<meta property="article:tag" content="Flutter">
+<meta property="article:tag" content="React Native">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://example.com/img/butterfly-icon.png"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="http://example.com/2024/12/05/index/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css"><script>
+    (() => {
+      
+    const saveToLocal = {
+      set: (key, value, ttl) => {
+        if (!ttl) return
+        const expiry = Date.now() + ttl * 86400000
+        localStorage.setItem(key, JSON.stringify({ value, expiry }))
+      },
+      get: key => {
+        const itemStr = localStorage.getItem(key)
+        if (!itemStr) return undefined
+        const { value, expiry } = JSON.parse(itemStr)
+        if (Date.now() > expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return value
+      }
+    }
+
+    window.btf = {
+      saveToLocal,
+      getScript: (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        Object.entries(attr).forEach(([key, val]) => script.setAttribute(key, val))
+        script.onload = script.onreadystatechange = () => {
+          if (!script.readyState || /loaded|complete/.test(script.readyState)) resolve()
+        }
+        script.onerror = reject
+        document.head.appendChild(script)
+      }),
+      getCSS: (url, id) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onload = link.onreadystatechange = () => {
+          if (!link.readyState || /loaded|complete/.test(link.readyState)) resolve()
+        }
+        link.onerror = reject
+        document.head.appendChild(link)
+      }),
+      addGlobalFn: (key, fn, name = false, parent = window) => {
+        if (!false && key.startsWith('pjax')) return
+        const globalFn = parent.globalFn || {}
+        globalFn[key] = globalFn[key] || {}
+        globalFn[key][name || Object.keys(globalFn[key]).length] = fn
+        parent.globalFn = globalFn
+      }
+    }
+  
+      
+      const activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      const activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+
+      btf.activateDarkMode = activateDarkMode
+      btf.activateLightMode = activateLightMode
+
+      const theme = saveToLocal.get('theme')
+    
+          theme === 'dark' ? activateDarkMode() : theme === 'light' ? activateLightMode() : null
+        
+      
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        document.documentElement.classList.toggle('hide-aside', asideStatus === 'hide')
+      }
+    
+      
+    const detectApple = () => {
+      if (/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)) {
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+  
+    })()
+  </script><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false,"highlightFullpage":false,"highlightMacStyle":false},
+  copy: {
+    success: '复制成功',
+    error: '复制失败',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  dateSuffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'null',
+  Snackbar: undefined,
+  infinitegrid: {
+    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid/dist/infinitegrid.min.js',
+    buttonText: '加载更多'
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '移动开发技术分享',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  isShuoshuo: false
+}</script><meta name="generator" content="Hexo 7.3.0"><link rel="alternate" href="/atom.xml" title="移动开发技术分享" type="application/atom+xml">
+</head><body><div class="post" id="body-wrap"><header class="post-bg" id="page-header"><nav id="nav"><span id="blog-info"><a class="nav-site-title" href="/"><span class="site-name">移动开发技术分享</span></a><a class="nav-page-title" href="/"><span class="site-name">移动开发技术分享</span></a></span><div id="menus"></div></nav><div id="post-info"><h1 class="post-title">无标题</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2024-12-05T02:24:49.090Z" title="发表于 2024-12-05 10:24:49">2024-12-05</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2024-12-05T03:18:20.595Z" title="更新于 2024-12-05 11:18:20">2024-12-05</time></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title=""><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">浏览量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="container post-content" id="article-container"><h1 id="吴雪松-资深移动开发工程师"><a href="#吴雪松-资深移动开发工程师" class="headerlink" title="吴雪松 - 资深移动开发工程师"></a>吴雪松 - 资深移动开发工程师</h1><h2 id="一、个人信息"><a href="#一、个人信息" class="headerlink" title="一、个人信息"></a>一、个人信息</h2><ul>
+<li><strong>电话</strong>：13488746143</li>
+<li><strong>邮箱</strong>：<a href="mailto:&#x42;&#84;&#x38;&#x35;&#x30;&#x34;&#x39;&#53;&#50;&#50;&#64;&#x47;&#x4d;&#65;&#x49;&#76;&#46;&#67;&#x4f;&#x4d;">&#x42;&#84;&#x38;&#x35;&#x30;&#x34;&#x39;&#53;&#50;&#50;&#64;&#x47;&#x4d;&#65;&#x49;&#76;&#46;&#67;&#x4f;&#x4d;</a></li>
+<li><strong>GitHub</strong>：HTTPS:&#x2F;&#x2F;GITHUB.COM&#x2F;LALALUYA</li>
+</ul>
+<h2 id="二、求职意向"><a href="#二、求职意向" class="headerlink" title="二、求职意向"></a>二、求职意向</h2><p>资深移动开发工程师，专注于iOS和安卓平台应用开发，致力于运用前沿技术打造高质量、用户体验卓越的移动应用。</p>
+<h2 id="三、教育背景"><a href="#三、教育背景" class="headerlink" title="三、教育背景"></a>三、教育背景</h2><ul>
+<li><strong>北京工商大学 - 计算机科学与技术（本科）</strong>（2011.09 - 2015.07）<ul>
+<li>计算机与信息科学学院</li>
+<li>相关课程：数据结构、算法分析、操作系统、计算机网络、数据库原理等。</li>
+</ul>
+</li>
+</ul>
+<h2 id="四、专业技能"><a href="#四、专业技能" class="headerlink" title="四、专业技能"></a>四、专业技能</h2><h3 id="（一）编程技能"><a href="#（一）编程技能" class="headerlink" title="（一）编程技能"></a>（一）编程技能</h3><ul>
+<li><strong>iOS</strong>：精通OBJECT - C、Swift程序开发，熟练运用多线程、TCP&#x2F;IP网络编程技术。</li>
+<li><strong>安卓</strong>：具备扎实的Android开发能力，能够独立完成项目开发与维护。</li>
+</ul>
+<h3 id="（二）工具与框架"><a href="#（二）工具与框架" class="headerlink" title="（二）工具与框架"></a>（二）工具与框架</h3><ul>
+<li><strong>开发工具</strong>：熟练掌握XCODE、Android Studio等集成开发环境，精通其开发和调试技巧。</li>
+<li><strong>数据库</strong>：熟悉FMDB、CoreData、SQLite等数据库管理系统，能够进行高效的数据存储与操作。</li>
+<li><strong>版本管理</strong>：熟练使用SVN、GIT进行版本控制，确保项目代码的有序管理与团队协作。</li>
+<li><strong>测试工具</strong>：熟悉FIRIM、TESTFLIGHT、蒲公英等测试平台，能够有效进行应用测试与分发。</li>
+</ul>
+<h3 id="（三）技术领域"><a href="#（三）技术领域" class="headerlink" title="（三）技术领域"></a>（三）技术领域</h3><ul>
+<li><strong>网络编程</strong>：深入理解TCP、UDP、HTTP、FTP等网络协议，擅长Socket网络编程，具备构建高性能网络应用的能力。</li>
+<li><strong>音视频处理</strong>：掌握移动端的FFMPEG音视频处理技术，能够实现视频播放、直播等功能。</li>
+<li><strong>系统机制</strong>：熟悉iOS的RunLoop、Runtime等核心机制，能够进行底层优化与功能扩展。</li>
+</ul>
+<h2 id="五、工作经历"><a href="#五、工作经历" class="headerlink" title="五、工作经历"></a>五、工作经历</h2><h3 id="北京航数宽网科技有限责任公司-iOS研发工程师（2015-04-2021-07）"><a href="#北京航数宽网科技有限责任公司-iOS研发工程师（2015-04-2021-07）" class="headerlink" title="北京航数宽网科技有限责任公司 - iOS研发工程师（2015.04 - 2021.07）"></a>北京航数宽网科技有限责任公司 - iOS研发工程师（2015.04 - 2021.07）</h3><h4 id="项目主导与全栈开发"><a href="#项目主导与全栈开发" class="headerlink" title="项目主导与全栈开发"></a>项目主导与全栈开发</h4><ul>
+<li>作为业务负责人，主导并独立完成公司多个iOS项目的端到端开发。从需求分析、架构设计到编码实现、测试上线，全程把控项目进度与质量。</li>
+<li>负责航数云APP - iOS架构（2018.07 - 2021.07）的开发工作。该APP作为航数宽带电视业务的重要辅助产品，服务于近百万电视订阅用户。成功实现投屏、视频播放、电视节目点播、直播回看、在线支付缴费、手机遥控电视的DLNA等功能，极大提升了用户对电视服务的便捷体验。</li>
+<li>主导掌上营业厅APP - Android开发（2018.07 - 2021.07）项目。为公司内部推广业务人员打造专属终端系统，涵盖订购套餐、缴费、移机等核心业务功能。历经3年时间，深入梳理公司宽带业务模式，以产品思维构建业务流原型与数据库架构。通过多次迭代更新，为公司业务拓展提供了强有力的技术支持，有效提升业务办理效率。</li>
+</ul>
+<h4 id="技术攻坚与创新"><a href="#技术攻坚与创新" class="headerlink" title="技术攻坚与创新"></a>技术攻坚与创新</h4><ul>
+<li>在央视CGTN项目 - iOS开发工程师（2016.02 - 2018.09）中，负责海外直播APP的iOS版本开发。克服诸多技术挑战，成功实现TWITTER、FACEBOOK等海外主流社交媒体平台的接入，确保视频在线播放、RTMP推流、M3U8播放等功能的稳定运行。通过持续迭代，优化APP直播功能，为央视海外记者提供便捷的现场直播工具，助力重大会议的全球传播。</li>
+<li>负责航天工会之家 - iOS开发工程师（2017.08 - 2019.10）项目，为航天科技集团打造工会内部管理APP。该综合型应用涵盖工会信息发布、公告公示、活动通知、调查问卷、健步统计等多元化功能。凭借精湛技术，确保项目高效交付，提升工会内部管理效率与员工参与度。</li>
+</ul>
+<h4 id="团队引领与协作"><a href="#团队引领与协作" class="headerlink" title="团队引领与协作"></a>团队引领与协作</h4><ul>
+<li>担任团队技术骨干，负责部门新人的培训工作，制定系统的培训计划，分享专业知识与实践经验，助力新人快速成长。</li>
+<li>在项目开发过程中，积极为组员提供技术指导，解决技术难题，优化代码质量，提升团队整体技术水平。</li>
+<li>协同其他项目团队，共同攻克公司层面的技术挑战，推动公司技术创新与业务发展。</li>
+</ul>
+<h2 id="六、研究经历"><a href="#六、研究经历" class="headerlink" title="六、研究经历"></a>六、研究经历</h2><h3 id="内网下的低延迟推流（2020-04-2020-07）"><a href="#内网下的低延迟推流（2020-04-2020-07）" class="headerlink" title="内网下的低延迟推流（2020.04 - 2020.07）"></a>内网下的低延迟推流（2020.04 - 2020.07）</h3><ul>
+<li>深入研究纯内网环境下的视频流传输问题，采用UDP协议实现低延迟视频直推技术。通过优化网络配置、调整传输策略等手段，有效降低视频传输延迟，提升视频播放的实时性与流畅性。该研究成果为内网视频应用场景提供了高效解决方案，具有重要的应用价值。</li>
+</ul>
+<h2 id="七、项目亮点"><a href="#七、项目亮点" class="headerlink" title="七、项目亮点"></a>七、项目亮点</h2><h3 id="航数云APP-iOS架构"><a href="#航数云APP-iOS架构" class="headerlink" title="航数云APP - iOS架构"></a>航数云APP - iOS架构</h3><ul>
+<li><strong>性能优化</strong>：通过优化网络请求与数据缓存策略，显著提升APP的响应速度，减少视频加载时间，为用户提供流畅的操作体验。</li>
+<li><strong>功能创新</strong>：引入先进的投屏技术与DLNA协议，实现手机与电视的无缝互动，拓展了电视的使用场景与用户控制方式。</li>
+</ul>
+<h3 id="掌上营业厅APP-Android开发"><a href="#掌上营业厅APP-Android开发" class="headerlink" title="掌上营业厅APP - Android开发"></a>掌上营业厅APP - Android开发</h3><ul>
+<li><strong>业务流程再造</strong>：基于对宽带业务的深度理解，重新设计业务流程，简化操作步骤，提升业务办理效率，降低用户操作成本。</li>
+<li><strong>数据驱动决策</strong>：搭建完善的数据统计与分析系统，为公司业务推广与运营决策提供有力数据支持，助力精准营销与业务优化。</li>
+</ul>
+<h3 id="CGTN项目-iOS开发工程师"><a href="#CGTN项目-iOS开发工程师" class="headerlink" title="CGTN项目 - iOS开发工程师"></a>CGTN项目 - iOS开发工程师</h3><ul>
+<li><strong>全球化适配</strong>：针对海外用户与社交媒体平台特点，进行多语言支持与界面优化，确保APP在全球范围内的兼容性与用户友好性。</li>
+<li><strong>技术整合创新</strong>：成功整合多种音视频技术与社交平台接口，打造一站式直播解决方案，满足重大会议现场直播的高要求。</li>
+</ul>
+<h3 id="航天工会之家IOS开发工程师"><a href="#航天工会之家IOS开发工程师" class="headerlink" title="航天工会之家IOS开发工程师"></a>航天工会之家IOS开发工程师</h3><ul>
+<li><strong>用户体验至上</strong>：以员工需求为导向，设计简洁直观的界面与便捷的操作流程，提高员工参与工会活动的积极性与便捷性。</li>
+<li><strong>系统稳定性保障</strong>：通过优化架构与严格测试，确保APP在大规模用户并发访问下的稳定运行，保障工会信息的及时传递与活动的顺利开展。</li>
+</ul>
+<h3 id="内网下的低延迟推流"><a href="#内网下的低延迟推流" class="headerlink" title="内网下的低延迟推流"></a>内网下的低延迟推流</h3><ul>
+<li><strong>技术突破</strong>：突破内网环境限制，实现低延迟视频传输，为内网视频应用如企业内部培训、监控系统等提供技术范例。</li>
+<li><strong>可扩展性探索</strong>：研究成果具备一定的可扩展性，为未来内网视频技术的进一步发展奠定基础，如支持更多设备类型与复杂网络环境。</li>
+</ul>
+<h2 id="八、自我评价"><a href="#八、自我评价" class="headerlink" title="八、自我评价"></a>八、自我评价</h2><ul>
+<li>拥有扎实的计算机专业知识与丰富的移动开发经验，具备独立承担复杂项目的能力。</li>
+<li>在iOS和安卓平台开发方面技术全面，善于运用多种技术解决实际问题，追求卓越的技术实现与用户体验。</li>
+<li>具备良好的团队协作精神，能够有效引领团队成长，共同攻克技术难题，推动项目顺利进展。</li>
+<li>对新技术保持高度热情与敏锐洞察力，持续学习并积极探索前沿技术在移动应用领域的应用，致力于为企业创造更大价值。</li>
+</ul>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta"><i class="fas fa-circle-user fa-fw"></i>文章作者: </span><span class="post-copyright-info"><a href="http://example.com">lalaluya</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta"><i class="fas fa-square-arrow-up-right fa-fw"></i>文章链接: </span><span class="post-copyright-info"><a href="http://example.com/2024/12/05/index/">http://example.com/2024/12/05/index/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta"><i class="fas fa-circle-exclamation fa-fw"></i>版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来源 <a href="http://example.com" target="_blank">移动开发技术分享</a>！</span></div></div><div class="tag_share"><div class="post-share"><div class="social-share" data-image="/img/butterfly-icon.png" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><a class="pagination-related full-width" href="/2024/03/20/android-category/" title="Android开发分类"><div class="cover" style="background: var(--default-bg-color)"></div><div class="info text-right"><div class="info-1"><div class="info-item-1">下一篇</div><div class="info-item-2">Android开发分类</div></div><div class="info-2"><div class="info-item-1">主要包含以下技术专题：  Kotlin&#x2F;Java 开发 Android 架构设计 性能优化 组件化实践  </div></div></div></a></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info text-center"><div class="avatar-img"><img src="/img/butterfly-icon.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info-name">lalaluya</div><div class="author-info-description">分享移动开发经验，包括 iOS/Android 开发技术、跨平台解决方案、性能优化等</div><div class="site-data"><a href="/archives/"><div class="headline">文章</div><div class="length-num">3</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">2</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">1</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/xxxxxx"><i class="fab fa-github"></i><span>Follow Me</span></a></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%90%B4%E9%9B%AA%E6%9D%BE-%E8%B5%84%E6%B7%B1%E7%A7%BB%E5%8A%A8%E5%BC%80%E5%8F%91%E5%B7%A5%E7%A8%8B%E5%B8%88"><span class="toc-number">1.</span> <span class="toc-text">吴雪松 - 资深移动开发工程师</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%80%E3%80%81%E4%B8%AA%E4%BA%BA%E4%BF%A1%E6%81%AF"><span class="toc-number">1.1.</span> <span class="toc-text">一、个人信息</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BA%8C%E3%80%81%E6%B1%82%E8%81%8C%E6%84%8F%E5%90%91"><span class="toc-number">1.2.</span> <span class="toc-text">二、求职意向</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%89%E3%80%81%E6%95%99%E8%82%B2%E8%83%8C%E6%99%AF"><span class="toc-number">1.3.</span> <span class="toc-text">三、教育背景</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%9B%9B%E3%80%81%E4%B8%93%E4%B8%9A%E6%8A%80%E8%83%BD"><span class="toc-number">1.4.</span> <span class="toc-text">四、专业技能</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%EF%BC%88%E4%B8%80%EF%BC%89%E7%BC%96%E7%A8%8B%E6%8A%80%E8%83%BD"><span class="toc-number">1.4.1.</span> <span class="toc-text">（一）编程技能</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%EF%BC%88%E4%BA%8C%EF%BC%89%E5%B7%A5%E5%85%B7%E4%B8%8E%E6%A1%86%E6%9E%B6"><span class="toc-number">1.4.2.</span> <span class="toc-text">（二）工具与框架</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%EF%BC%88%E4%B8%89%EF%BC%89%E6%8A%80%E6%9C%AF%E9%A2%86%E5%9F%9F"><span class="toc-number">1.4.3.</span> <span class="toc-text">（三）技术领域</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BA%94%E3%80%81%E5%B7%A5%E4%BD%9C%E7%BB%8F%E5%8E%86"><span class="toc-number">1.5.</span> <span class="toc-text">五、工作经历</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%8C%97%E4%BA%AC%E8%88%AA%E6%95%B0%E5%AE%BD%E7%BD%91%E7%A7%91%E6%8A%80%E6%9C%89%E9%99%90%E8%B4%A3%E4%BB%BB%E5%85%AC%E5%8F%B8-iOS%E7%A0%94%E5%8F%91%E5%B7%A5%E7%A8%8B%E5%B8%88%EF%BC%882015-04-2021-07%EF%BC%89"><span class="toc-number">1.5.1.</span> <span class="toc-text">北京航数宽网科技有限责任公司 - iOS研发工程师（2015.04 - 2021.07）</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E9%A1%B9%E7%9B%AE%E4%B8%BB%E5%AF%BC%E4%B8%8E%E5%85%A8%E6%A0%88%E5%BC%80%E5%8F%91"><span class="toc-number">1.5.1.1.</span> <span class="toc-text">项目主导与全栈开发</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%8A%80%E6%9C%AF%E6%94%BB%E5%9D%9A%E4%B8%8E%E5%88%9B%E6%96%B0"><span class="toc-number">1.5.1.2.</span> <span class="toc-text">技术攻坚与创新</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%9B%A2%E9%98%9F%E5%BC%95%E9%A2%86%E4%B8%8E%E5%8D%8F%E4%BD%9C"><span class="toc-number">1.5.1.3.</span> <span class="toc-text">团队引领与协作</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%85%AD%E3%80%81%E7%A0%94%E7%A9%B6%E7%BB%8F%E5%8E%86"><span class="toc-number">1.6.</span> <span class="toc-text">六、研究经历</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%86%85%E7%BD%91%E4%B8%8B%E7%9A%84%E4%BD%8E%E5%BB%B6%E8%BF%9F%E6%8E%A8%E6%B5%81%EF%BC%882020-04-2020-07%EF%BC%89"><span class="toc-number">1.6.1.</span> <span class="toc-text">内网下的低延迟推流（2020.04 - 2020.07）</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%83%E3%80%81%E9%A1%B9%E7%9B%AE%E4%BA%AE%E7%82%B9"><span class="toc-number">1.7.</span> <span class="toc-text">七、项目亮点</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%88%AA%E6%95%B0%E4%BA%91APP-iOS%E6%9E%B6%E6%9E%84"><span class="toc-number">1.7.1.</span> <span class="toc-text">航数云APP - iOS架构</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%8E%8C%E4%B8%8A%E8%90%A5%E4%B8%9A%E5%8E%85APP-Android%E5%BC%80%E5%8F%91"><span class="toc-number">1.7.2.</span> <span class="toc-text">掌上营业厅APP - Android开发</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#CGTN%E9%A1%B9%E7%9B%AE-iOS%E5%BC%80%E5%8F%91%E5%B7%A5%E7%A8%8B%E5%B8%88"><span class="toc-number">1.7.3.</span> <span class="toc-text">CGTN项目 - iOS开发工程师</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%88%AA%E5%A4%A9%E5%B7%A5%E4%BC%9A%E4%B9%8B%E5%AE%B6IOS%E5%BC%80%E5%8F%91%E5%B7%A5%E7%A8%8B%E5%B8%88"><span class="toc-number">1.7.4.</span> <span class="toc-text">航天工会之家IOS开发工程师</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%86%85%E7%BD%91%E4%B8%8B%E7%9A%84%E4%BD%8E%E5%BB%B6%E8%BF%9F%E6%8E%A8%E6%B5%81"><span class="toc-number">1.7.5.</span> <span class="toc-text">内网下的低延迟推流</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%85%AB%E3%80%81%E8%87%AA%E6%88%91%E8%AF%84%E4%BB%B7"><span class="toc-number">1.8.</span> <span class="toc-text">八、自我评价</span></a></li></ol></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2024/12/05/index/" title="无标题">无标题</a><time datetime="2024-12-05T02:24:49.090Z" title="发表于 2024-12-05 10:24:49">2024-12-05</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2024/03/20/android-category/" title="Android开发分类">Android开发分类</a><time datetime="2024-03-19T16:00:00.000Z" title="发表于 2024-03-20 00:00:00">2024-03-20</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2024/03/20/ios-category/" title="iOS开发分类">iOS开发分类</a><time datetime="2024-03-19T16:00:00.000Z" title="发表于 2024-03-20 00:00:00">2024-03-20</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2019 - 2024 By lalaluya</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="日间和夜间模式切换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><div class="js-pjax"></div><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
