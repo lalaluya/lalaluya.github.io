@@ -19,22 +19,22 @@
   <meta name="author" content="咔咔咔迪斯科">
   <meta name="keywords" content="咔咔咔迪斯科,技术博客,iOS开发,Android开发,移动开发,编程技术,软件开发,生活随笔,学习笔记,个人博客">
   
-    <meta name="description" content="主要包含以下技术专题：  Kotlin&#x2F;Java 开发 Android 架构设计 性能优化 组件化实践">
+    <meta name="description" content="iOS 开发基础知识梳理1. Objective-C 语言基础1.1 基本语法 头文件 (.h) 和 实现文件 (.m) 方法声明与实现：123456789@interface Person : NSObject- (void)sayHello;@end@implementation Person- (void)sayHello &#123;    NSLog(@&quot;Hello, Worl">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Android开发分类">
-<meta property="og:url" content="http://example.com/2024/03/20/android-category/index.html">
+<meta property="og:title" content="iOS 开发基础知识梳理">
+<meta property="og:url" content="http://example.com/2024/03/20/iOS-Base/index.html">
 <meta property="og:site_name" content="咔咔咔迪斯科的博客">
-<meta property="og:description" content="主要包含以下技术专题：  Kotlin&#x2F;Java 开发 Android 架构设计 性能优化 组件化实践">
+<meta property="og:description" content="iOS 开发基础知识梳理1. Objective-C 语言基础1.1 基本语法 头文件 (.h) 和 实现文件 (.m) 方法声明与实现：123456789@interface Person : NSObject- (void)sayHello;@end@implementation Person- (void)sayHello &#123;    NSLog(@&quot;Hello, Worl">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2024-03-19T16:00:00.000Z">
-<meta property="article:modified_time" content="2024-12-13T03:43:10.998Z">
+<meta property="article:modified_time" content="2025-02-28T09:09:39.451Z">
 <meta property="article:author" content="咔咔咔迪斯科">
-<meta property="article:tag" content="Android">
+<meta property="article:tag" content="技术">
 <meta name="twitter:card" content="summary_large_image">
   
   
   
-  <title>Android开发分类 - 咔咔咔迪斯科的博客</title>
+  <title>iOS 开发基础知识梳理 - 咔咔咔迪斯科的博客</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -201,7 +201,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="Android开发分类"></span>
+            <span id="subtitle" data-typed-text="iOS 开发基础知识梳理"></span>
           
         </div>
 
@@ -224,7 +224,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          28 字
+          469 字
         
       </span>
     
@@ -235,7 +235,7 @@
         
         
         
-          1 分钟
+          4 分钟
         
       </span>
     
@@ -272,18 +272,78 @@
       <div class="container nopadding-x-md" id="board-ctn">
         <div id="board">
           <article class="post-content mx-auto">
-            <h1 id="seo-header">Android开发分类</h1>
+            <h1 id="seo-header">iOS 开发基础知识梳理</h1>
             
             
               <div class="markdown-body">
                 
-                <p>主要包含以下技术专题：</p>
-<ol>
-<li>Kotlin&#x2F;Java 开发</li>
-<li>Android 架构设计</li>
-<li>性能优化</li>
-<li>组件化实践</li>
-</ol>
+                <h1 id="iOS-开发基础知识梳理"><a href="#iOS-开发基础知识梳理" class="headerlink" title="iOS 开发基础知识梳理"></a>iOS 开发基础知识梳理</h1><h2 id="1-Objective-C-语言基础"><a href="#1-Objective-C-语言基础" class="headerlink" title="1. Objective-C 语言基础"></a>1. Objective-C 语言基础</h2><h3 id="1-1-基本语法"><a href="#1-1-基本语法" class="headerlink" title="1.1 基本语法"></a>1.1 基本语法</h3><ul>
+<li>头文件 (<code>.h</code>) 和 实现文件 (<code>.m</code>)</li>
+<li>方法声明与实现：<figure class="highlight objc"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><code class="hljs objc"><span class="hljs-class"><span class="hljs-keyword">@interface</span> <span class="hljs-title">Person</span> : <span class="hljs-title">NSObject</span></span><br>- (<span class="hljs-type">void</span>)sayHello;<br><span class="hljs-keyword">@end</span><br><br><span class="hljs-class"><span class="hljs-keyword">@implementation</span> <span class="hljs-title">Person</span></span><br>- (<span class="hljs-type">void</span>)sayHello &#123;<br>    <span class="hljs-built_in">NSLog</span>(<span class="hljs-string">@&quot;Hello, World!&quot;</span>);<br>&#125;<br><span class="hljs-keyword">@end</span><br></code></pre></td></tr></table></figure></li>
+</ul>
+<h3 id="1-2-关键字"><a href="#1-2-关键字" class="headerlink" title="1.2 关键字"></a>1.2 关键字</h3><ul>
+<li><code>@interface</code> &#x2F; <code>@implementation</code>：类的声明与实现  </li>
+<li><code>@property</code> &#x2F; <code>@synthesize</code> &#x2F; <code>@dynamic</code>：属性声明、自动合成、动态合成  </li>
+<li><code>self</code> &#x2F; <code>super</code>：指向自身、调用父类方法  </li>
+<li><code>id</code> &#x2F; <code>instancetype</code>：通用对象类型，推荐 <code>instancetype</code> 作为返回值  </li>
+<li><code>delegate</code> &#x2F; <code>protocol</code>：协议与代理模式</li>
+</ul>
+<h3 id="1-3-内存管理"><a href="#1-3-内存管理" class="headerlink" title="1.3 内存管理"></a>1.3 内存管理</h3><ul>
+<li><strong>MRC（手动引用计数）</strong><ul>
+<li><code>retain</code> &#x2F; <code>release</code> &#x2F; <code>autorelease</code></li>
+</ul>
+</li>
+<li><strong>ARC（自动引用计数）</strong><ul>
+<li><code>strong</code> &#x2F; <code>weak</code> &#x2F; <code>assign</code> &#x2F; <code>copy</code></li>
+</ul>
+</li>
+<li><strong>循环引用问题</strong>（<code>weak</code> 修饰，解决 <code>retain cycle</code>）</li>
+</ul>
+<hr>
+<h2 id="2-UIKit-和界面开发"><a href="#2-UIKit-和界面开发" class="headerlink" title="2. UIKit 和界面开发"></a>2. UIKit 和界面开发</h2><h3 id="2-1-UIView-与-UIViewController"><a href="#2-1-UIView-与-UIViewController" class="headerlink" title="2.1 UIView 与 UIViewController"></a>2.1 UIView 与 UIViewController</h3><ul>
+<li><p><strong>视图控制器生命周期</strong></p>
+<figure class="highlight objc"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs objc">- (<span class="hljs-type">void</span>)viewDidLoad;<br>- (<span class="hljs-type">void</span>)viewWillAppear:(<span class="hljs-type">BOOL</span>)animated;<br>- (<span class="hljs-type">void</span>)viewDidAppear:(<span class="hljs-type">BOOL</span>)animated;<br>- (<span class="hljs-type">void</span>)viewWillDisappear:(<span class="hljs-type">BOOL</span>)animated;<br>- (<span class="hljs-type">void</span>)viewDidDisappear:(<span class="hljs-type">BOOL</span>)animated;<br></code></pre></td></tr></table></figure>
+</li>
+<li><p><strong>手写 UI vs Storyboard</strong></p>
+<ul>
+<li><strong>代码方式</strong><figure class="highlight objc"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs objc"><span class="hljs-built_in">UILabel</span> *label = [[<span class="hljs-built_in">UILabel</span> alloc] initWithFrame:<span class="hljs-built_in">CGRectMake</span>(<span class="hljs-number">20</span>, <span class="hljs-number">50</span>, <span class="hljs-number">200</span>, <span class="hljs-number">40</span>)];<br>label.text = <span class="hljs-string">@&quot;Hello&quot;</span>;<br>[<span class="hljs-keyword">self</span>.view addSubview:label];<br></code></pre></td></tr></table></figure></li>
+<li><strong>Storyboard &#x2F; XIB</strong>（可视化拖拽，适合小团队开发）</li>
+</ul>
+</li>
+</ul>
+<h3 id="2-2-事件响应"><a href="#2-2-事件响应" class="headerlink" title="2.2 事件响应"></a>2.2 事件响应</h3><ul>
+<li><strong>target-action 机制</strong><figure class="highlight objc"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs objc">[button addTarget:<span class="hljs-keyword">self</span> action:<span class="hljs-keyword">@selector</span>(buttonTapped) forControlEvents:<span class="hljs-built_in">UIControlEventTouchUpInside</span>];<br></code></pre></td></tr></table></figure></li>
+<li><strong>手势识别</strong><figure class="highlight objc"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs objc"><span class="hljs-built_in">UITapGestureRecognizer</span> *tap = [[<span class="hljs-built_in">UITapGestureRecognizer</span> alloc] initWithTarget:<span class="hljs-keyword">self</span> action:<span class="hljs-keyword">@selector</span>(viewTapped)];<br>[<span class="hljs-keyword">self</span>.view addGestureRecognizer:tap];<br></code></pre></td></tr></table></figure></li>
+</ul>
+<hr>
+<h2 id="3-网络通信"><a href="#3-网络通信" class="headerlink" title="3. 网络通信"></a>3. 网络通信</h2><h3 id="3-1-NSURLSession"><a href="#3-1-NSURLSession" class="headerlink" title="3.1 NSURLSession"></a>3.1 NSURLSession</h3><ul>
+<li><p><strong>GET 请求</strong></p>
+<figure class="highlight objc"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><code class="hljs objc"><span class="hljs-built_in">NSURL</span> *url = [<span class="hljs-built_in">NSURL</span> URLWithString:<span class="hljs-string">@&quot;https://api.github.com/lalaluya/data&quot;</span>];<br><span class="hljs-built_in">NSURLSessionDataTask</span> *task = [[<span class="hljs-built_in">NSURLSession</span> sharedSession] dataTaskWithURL:url completionHandler:^(<span class="hljs-built_in">NSData</span> *data, <span class="hljs-built_in">NSURLResponse</span> *response, <span class="hljs-built_in">NSError</span> *error) &#123;<br>    <span class="hljs-keyword">if</span> (data) &#123;<br>        <span class="hljs-built_in">NSDictionary</span> *json = [<span class="hljs-built_in">NSJSONSerialization</span> JSONObjectWithData:data options:<span class="hljs-number">0</span> error:<span class="hljs-literal">nil</span>];<br>        <span class="hljs-built_in">NSLog</span>(<span class="hljs-string">@&quot;%@&quot;</span>, json);<br>    &#125;<br>&#125;];<br>[task resume];<br></code></pre></td></tr></table></figure>
+</li>
+<li><p><strong>POST 请求</strong></p>
+<figure class="highlight objc"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs objc"><span class="hljs-built_in">NSMutableURLRequest</span> *request = [<span class="hljs-built_in">NSMutableURLRequest</span> requestWithURL:[<span class="hljs-built_in">NSURL</span> URLWithString:<span class="hljs-string">@&quot;https://api.github.com/lalaluya/login&quot;</span>]];<br>request.HTTPMethod = <span class="hljs-string">@&quot;POST&quot;</span>;<br>request.HTTPBody = [<span class="hljs-string">@&quot;username=admin&amp;password=123456&quot;</span> dataUsingEncoding:<span class="hljs-built_in">NSUTF8StringEncoding</span>];<br></code></pre></td></tr></table></figure></li>
+</ul>
+<h3 id="3-2-JSON-解析"><a href="#3-2-JSON-解析" class="headerlink" title="3.2 JSON 解析"></a>3.2 JSON 解析</h3><ul>
+<li><code>NSJSONSerialization</code> 解析 JSON：<figure class="highlight objc"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs objc"><span class="hljs-built_in">NSDictionary</span> *json = [<span class="hljs-built_in">NSJSONSerialization</span> JSONObjectWithData:data options:kNilOptions error:<span class="hljs-literal">nil</span>];<br></code></pre></td></tr></table></figure></li>
+</ul>
+<hr>
+<h2 id="4-数据存储"><a href="#4-数据存储" class="headerlink" title="4. 数据存储"></a>4. 数据存储</h2><h3 id="4-1-NSUserDefaults（轻量级存储）"><a href="#4-1-NSUserDefaults（轻量级存储）" class="headerlink" title="4.1 NSUserDefaults（轻量级存储）"></a>4.1 NSUserDefaults（轻量级存储）</h3><figure class="highlight objc"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs objc">[[<span class="hljs-built_in">NSUserDefaults</span> standardUserDefaults] setObject:<span class="hljs-string">@&quot;John&quot;</span> forKey:<span class="hljs-string">@&quot;username&quot;</span>];<br><span class="hljs-built_in">NSString</span> *name = [[<span class="hljs-built_in">NSUserDefaults</span> standardUserDefaults] stringForKey:<span class="hljs-string">@&quot;username&quot;</span>];<br></code></pre></td></tr></table></figure>
+
+<h3 id="4-2-文件存储"><a href="#4-2-文件存储" class="headerlink" title="4.2 文件存储"></a>4.2 文件存储</h3><figure class="highlight objc"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs objc"><span class="hljs-built_in">NSString</span> *path = [<span class="hljs-built_in">NSHomeDirectory</span>() stringByAppendingPathComponent:<span class="hljs-string">@&quot;Documents/test.txt&quot;</span>];<br>[<span class="hljs-string">@&quot;Hello, World!&quot;</span> writeToFile:path atomically:<span class="hljs-literal">YES</span> encoding:<span class="hljs-built_in">NSUTF8StringEncoding</span> error:<span class="hljs-literal">nil</span>];<br></code></pre></td></tr></table></figure>
+
+<h3 id="4-3-CoreData"><a href="#4-3-CoreData" class="headerlink" title="4.3 CoreData"></a>4.3 CoreData</h3><figure class="highlight objc"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs objc"><span class="hljs-built_in">NSFetchRequest</span> *fetchRequest = [<span class="hljs-built_in">NSFetchRequest</span> fetchRequestWithEntityName:<span class="hljs-string">@&quot;Person&quot;</span>];<br><span class="hljs-built_in">NSArray</span> *result = [context executeFetchRequest:fetchRequest error:<span class="hljs-literal">nil</span>];<br></code></pre></td></tr></table></figure>
+
+<hr>
+<h2 id="5-调试与优化"><a href="#5-调试与优化" class="headerlink" title="5. 调试与优化"></a>5. 调试与优化</h2><h3 id="5-1-Xcode-调试"><a href="#5-1-Xcode-调试" class="headerlink" title="5.1 Xcode 调试"></a>5.1 Xcode 调试</h3><ul>
+<li><strong>使用断点（breakpoint）</strong></li>
+<li><code>po</code> 命令打印对象：<figure class="highlight vim"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs vim">(lldb) <span class="hljs-keyword">po</span> self.<span class="hljs-keyword">view</span><br></code></pre></td></tr></table></figure></li>
+</ul>
+<h3 id="5-2-Instruments-性能分析"><a href="#5-2-Instruments-性能分析" class="headerlink" title="5.2 Instruments 性能分析"></a>5.2 Instruments 性能分析</h3><ul>
+<li><strong>Leaks</strong> 监测内存泄漏</li>
+<li><strong>Time Profiler</strong> 分析 CPU 性能</li>
+<li><strong>Allocations</strong> 监测内存分配</li>
+</ul>
+<hr>
 
                 
               </div>
@@ -302,7 +362,7 @@
     
       <span class="category-chain">
         
-  <a href="/categories/%E6%8A%80%E6%9C%AF%E5%88%86%E7%B1%BB/" class="category-chain-item">技术分类</a>
+  <a href="/categories/%E6%8A%80%E6%9C%AF%E5%88%86%E4%BA%AB/" class="category-chain-item">技术分享</a>
   
   
 
@@ -317,7 +377,7 @@
     <div class="post-meta">
       <i class="iconfont icon-tags"></i>
       
-        <a href="/tags/Android/" class="print-no-link">#Android</a>
+        <a href="/tags/%E6%8A%80%E6%9C%AF/" class="print-no-link">#技术</a>
       
     </div>
   
@@ -329,8 +389,8 @@
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>Android开发分类</div>
-      <div>http://example.com/2024/03/20/android-category/</div>
+      <div>iOS 开发基础知识梳理</div>
+      <div>http://example.com/2024/03/20/iOS-Base/</div>
     </div>
     <div class="license-meta">
       
@@ -374,9 +434,9 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2024/03/20/Auto-Layout-Core-Graphics/" title="Auto Layout、Core Graphics">
+                      <a href="/2024/03/20/android-category/" title="Android开发分类">
                         <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">Auto Layout、Core Graphics</span>
+                        <span class="hidden-mobile">Android开发分类</span>
                         <span class="visible-mobile">上一篇</span>
                       </a>
                     
@@ -384,8 +444,8 @@
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2024/03/20/iOS-Base/" title="iOS 开发基础知识梳理">
-                        <span class="hidden-mobile">iOS 开发基础知识梳理</span>
+                      <a href="/2024/03/20/index/" title="欢迎来到咔咔咔迪斯科的博客">
+                        <span class="hidden-mobile">欢迎来到咔咔咔迪斯科的博客</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>
