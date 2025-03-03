@@ -5,8 +5,8 @@ http://example.com/2024/03/20/iOS-Performance-Optimization/
 http://example.com/2024/03/20/index/
 http://example.com/2024/03/20/Auto-Layout-Core-Graphics/
 http://example.com/resume/index.html
-http://example.com/categories/index.html
 http://example.com/tags/index.html
+http://example.com/categories/index.html
 http://example.com/2024/03/20/android-category/
 http://example.com/
 http://example.com/tags/iOS/

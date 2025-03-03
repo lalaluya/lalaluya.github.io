@@ -83,24 +83,6 @@
       </tags>
   </entry>
   <entry>
-    <title>Android开发分类</title>
-    <url>/2024/03/20/android-category/</url>
-    <content><![CDATA[<p>主要包含以下技术专题：</p>
-<ol>
-<li>Kotlin&#x2F;Java 开发</li>
-<li>Android 架构设计</li>
-<li>性能优化</li>
-<li>组件化实践</li>
-</ol>
-]]></content>
-      <categories>
-        <category>技术分类</category>
-      </categories>
-      <tags>
-        <tag>Android</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>iOS 开发基础知识梳理</title>
     <url>/2024/03/20/iOS-Base/</url>
     <content><![CDATA[<h1 id="iOS-开发基础知识梳理"><a href="#iOS-开发基础知识梳理" class="headerlink" title="iOS 开发基础知识梳理"></a>iOS 开发基础知识梳理</h1><h2 id="1-Objective-C-语言基础"><a href="#1-Objective-C-语言基础" class="headerlink" title="1. Objective-C 语言基础"></a>1. Objective-C 语言基础</h2><h3 id="1-1-基本语法"><a href="#1-1-基本语法" class="headerlink" title="1.1 基本语法"></a>1.1 基本语法</h3><ul>
@@ -252,6 +234,24 @@
       </tags>
   </entry>
   <entry>
+    <title>Android开发分类</title>
+    <url>/2024/03/20/android-category/</url>
+    <content><![CDATA[<p>主要包含以下技术专题：</p>
+<ol>
+<li>Kotlin&#x2F;Java 开发</li>
+<li>Android 架构设计</li>
+<li>性能优化</li>
+<li>组件化实践</li>
+</ol>
+]]></content>
+      <categories>
+        <category>技术分类</category>
+      </categories>
+      <tags>
+        <tag>Android</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>欢迎来到咔咔咔迪斯科的博客</title>
     <url>/2024/03/20/index/</url>
     <content><![CDATA[<h1 id="欢迎来到我的博客"><a href="#欢迎来到我的博客" class="headerlink" title="欢迎来到我的博客"></a>欢迎来到我的博客</h1><h2 id="关于我"><a href="#关于我" class="headerlink" title="关于我"></a>关于我</h2><p>大家好，我是咔咔咔迪斯科，一名热爱技术的开发者。这个博客将会分享我在技术学习和生活中的所思所想。</p>
@@ -269,7 +269,7 @@
 </ol>
 <h2 id="联系方式"><a href="#联系方式" class="headerlink" title="联系方式"></a>联系方式</h2><ul>
 <li>GitHub：[<a href="https://github.com/lalaluya]">https://github.com/lalaluya]</a></li>
-<li>Email：[<a href="mailto:&#98;&#x74;&#56;&#x35;&#48;&#52;&#x39;&#53;&#x32;&#x32;&#x40;&#103;&#109;&#x61;&#x69;&#108;&#x2e;&#x63;&#x6f;&#109;">&#98;&#x74;&#56;&#x35;&#48;&#52;&#x39;&#53;&#x32;&#x32;&#x40;&#103;&#109;&#x61;&#x69;&#108;&#x2e;&#x63;&#x6f;&#109;</a>]</li>
+<li>Email：[<a href="mailto:&#98;&#116;&#56;&#x35;&#48;&#52;&#57;&#x35;&#x32;&#x32;&#x40;&#x67;&#x6d;&#97;&#x69;&#108;&#46;&#x63;&#x6f;&#x6d;">&#98;&#116;&#56;&#x35;&#48;&#52;&#57;&#x35;&#x32;&#x32;&#x40;&#x67;&#x6d;&#97;&#x69;&#108;&#46;&#x63;&#x6f;&#x6d;</a>]</li>
 </ul>
 <p>欢迎交流与讨论！</p>
 ]]></content>
