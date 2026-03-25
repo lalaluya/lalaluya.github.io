@@ -1,0 +1,65 @@
+# 网站基本信息
+title: 咔咔咔迪斯科的博客
+subtitle: '技术探索与生活感悟'
+description: '欢迎来到我的博客'
+keywords: 
+  - 咔咔咔迪斯科
+  - 技术博客
+  - iOS开发
+  - Android开发
+  - 移动开发
+  - 编程技术
+  - 软件开发
+  - 生活随笔
+  - 学习笔记
+  - 个人博客
+author: 咔咔咔迪斯科
+language: zh-CN
+timezone: 'Asia/Shanghai'
+
+# 主题设置
+theme: fluid
+
+# 菜单配置
+menu:
+  首页: /
+  归档: /archives
+  分类: /categories
+  标签: /tags
+  关于: /about
+
+# Fluid主题配置
+fluid:
+  # 首页banner图
+  banner_img: /img/default.png
+  # 文章页banner图
+  post:
+    banner_img: /img/default.png
+  # 归档页banner图
+  archive:
+    banner_img: /img/default.png
+
+# 部署配置
+deploy:
+  type: git
+  repo: https://github.com/lalaluya/lalaluya.github.io.git
+  branch: main
+
+# 文章配置
+post_asset_folder: true
+default_layout: post
+
+# 首页配置
+index_generator:
+  path: ''
+  per_page: 10
+  order_by: -date
+
+# 代码高亮配置
+highlight:
+  enable: true
+  line_number: true
+  auto_detect: false
+  tab_replace: ''
+  wrap: true
+  hljs: false
