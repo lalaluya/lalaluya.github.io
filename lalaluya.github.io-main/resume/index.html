@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-default-color-scheme=auto>
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/fluid.png">
+  <link rel="icon" href="/img/fluid.png">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="author" content="咔咔咔迪斯科">
+  <meta name="keywords" content="咔咔咔迪斯科,技术博客,iOS开发,Android开发,移动开发,编程技术,软件开发,生活随笔,学习笔记,个人博客">
+  
+  <meta name="description" content="咔咔咔迪斯科的个人简历 - 高级移动端开发工程师，专注于iOS和Android平台开发，拥有丰富的移动应用开发经验">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="个人简历 - 咔咔咔迪斯科">
+  <meta property="og:url" content="http://example.com/resume/index.html">
+  <meta property="og:site_name" content="咔咔咔迪斯科的博客">
+  <meta property="og:description" content="咔咔咔迪斯科的个人简历 - 高级移动端开发工程师，专注于iOS和Android平台开发，拥有丰富的移动应用开发经验">
+  <meta property="og:locale" content="zh_CN">
+  <meta property="article:published_time" content="2024-12-13T03:41:23.000Z">
+  <meta property="article:modified_time" content="2024-12-13T07:45:39.939Z">
+  <meta property="article:author" content="咔咔咔迪斯科">
+  <meta name="twitter:card" content="summary_large_image">
+  
+  <title>个人简历 - 咔咔咔迪斯科的博客</title>
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="//at.alicdn.com/t/c/font_1749284_5i9bdhy70f8.css">
+  <link rel="stylesheet" href="//at.alicdn.com/t/c/font_1736178_k526ubmyhba.css">
+  <link  rel="stylesheet" href="/css/main.css" />
+  <link id="highlight-css" rel="stylesheet" href="/css/highlight.css" />
+  
+  <style>
+    .resume-section {
+      margin-bottom: 2rem;
+      padding: 1.5rem;
+      background-color: var(--board-bg-color);
+      border-radius: 0.5rem;
+      box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
+      transition: all 0.3s ease;
+      animation: fadeInUp 0.6s ease forwards;
+      opacity: 0;
+    }
+    
+    .resume-section:hover {
+      box-shadow: 0 8px 25px rgba(0,0,0,0.25);
+      transform: translateY(-5px);
+    }
+    
+    .section-title {
+      border-bottom: 3px solid var(--link-hover-color);
+      padding-bottom: 0.75rem;
+      margin-bottom: 1.5rem;
+      color: var(--post-heading-color);
+      font-weight: bold;
+      position: relative;
+    }
+    
+    .section-title::after {
+      content: '';
+      position: absolute;
+      bottom: -3px;
+      left: 0;
+      width: 60px;
+      height: 3px;
+      background-color: var(--link-hover-color);
+      border-radius: 3px;
+    }
+    
+    .section-title i {
+      margin-right: 0.75rem;
+      color: var(--link-hover-color);
+    }
+    
+    .experience-item, .project-item, .education-item {
+      margin-bottom: 1.5rem;
+      padding-bottom: 1rem;
+      border-bottom: 1px dashed var(--line-color);
+      transition: all 0.3s ease;
+    }
+    
+    .experience-item:last-child, .project-item:last-child, .education-item:last-child {
+      border-bottom: none;
+      margin-bottom: 0;
+    }
+    
+    .experience-item:hover, .project-item:hover, .education-item:hover {
+      transform: translateX(5px);
+    }
+    
+    .experience-item h4, .project-item h4, .education-item h4 {
+      color: var(--post-heading-color);
+      margin-bottom: 0.5rem;
+      font-weight: 600;
+    }
+    
+    .duration {
+      font-size: 0.9rem;
+      margin-bottom: 0.8rem;
+      color: var(--link-hover-color);
+      font-weight: 500;
+    }
+    
+    .table td {
+      border: none;
+      padding: 0.4rem 0;
+    }
+    
+    .contact-info a {
+      color: var(--post-link-color);
+      text-decoration: none;
+      transition: all 0.3s ease;
+    }
+    
+    .contact-info a:hover {
+      color: var(--link-hover-color);
+      text-decoration: underline;
+    }
+    
+    ul {
+      padding-left: 1.25rem;
+    }
+    
+    ul li {
+      margin-bottom: 0.5rem;
+      position: relative;
+      padding-left: 1.25rem;
+    }
+    
+    ul li::before {
+      content: '▶';
+      position: absolute;
+      left: 0;
+      color: var(--link-hover-color);
+      font-size: 0.7rem;
+      top: 0.3rem;
+    }
+    
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    
+    .resume-section:nth-child(1) { animation-delay: 0.1s; }
+    .resume-section:nth-child(2) { animation-delay: 0.2s; }
+    .resume-section:nth-child(3) { animation-delay: 0.3s; }
+    .resume-section:nth-child(4) { animation-delay: 0.4s; }
+    .resume-section:nth-child(5) { animation-delay: 0.5s; }
+    .resume-section:nth-child(6) { animation-delay: 0.6s; }
+    
+    @media (max-width: 767px) {
+      .resume-section {
+        padding: 1.25rem;
+      }
+      
+      .section-title {
+        font-size: 1.4rem;
+      }
+      
+      .table td {
+        display: block;
+        width: 100%;
+      }
+    }
+  </style>  
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    Fluid.ctx = Object.assign({}, Fluid.ctx)
+    var CONFIG = {"hostname":"example.com","root":"/","version":"1.9.8","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":{"measurement_id":null},"tencent":{"sid":null,"cid":null},"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false},"umami":{"src":null,"website_id":null,"domains":null,"start_time":"2024-01-01T00:00:00.000Z","token":null,"api_server":"https://lalaluya.github.io"}},"search_path":"/local-search.xml","include_content_in_search":true};
+
+    if (CONFIG.web_analytics.follow_dnt) {
+      var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
+      Fluid.ctx.dnt = dntVal && (dntVal.startsWith('1') || dntVal.startsWith('yes') || dntVal.startsWith('on'));
+    }
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+  <meta name="generator" content="Hexo 7.3.0"><link rel="alternate" href="/atom.xml" title="咔咔咔迪斯科的博客" type="application/atom+xml">
+</head>
+
+<body>
+  <header>
+    <div class="header-inner" style="height: 60vh;">
+      <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+        <div class="container">
+          <a class="navbar-brand" href="/">
+            <strong>咔咔咔迪斯科</strong>
+          </a>
+
+          <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+                  data-target="#navbarSupportedContent"
+                  aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <div class="animated-icon"><span></span><span></span><span></span></div>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto text-center">
+              <li class="nav-item">
+                <a class="nav-link" href="/" target="_self">
+                  <i class="iconfont icon-home-fill"></i>
+                  <span>首页</span>
+                </a>
+              </li>
+              
+              <li class="nav-item">
+                <a class="nav-link" href="/archives/" target="_self">
+                  <i class="iconfont icon-archive-fill"></i>
+                  <span>归档</span>
+                </a>
+              </li>
+              
+              <li class="nav-item">
+                <a class="nav-link" href="/categories/" target="_self">
+                  <i class="iconfont icon-category-fill"></i>
+                  <span>分类</span>
+                </a>
+              </li>
+              
+              <li class="nav-item">
+                <a class="nav-link" href="/tags/" target="_self">
+                  <i class="iconfont icon-tags-fill"></i>
+                  <span>标签</span>
+                </a>
+              </li>
+              
+              <li class="nav-item">
+                <a class="nav-link" href="/about/" target="_self">
+                  <i class="iconfont icon-user-fill"></i>
+                  <span>关于</span>
+                </a>
+              </li>
+              
+              <li class="nav-item">
+                <a class="nav-link" href="/resume/" target="_self">
+                  <i class="iconfont icon-file"></i>
+                  <span>简历</span>
+                </a>
+              </li>
+              
+              <li class="nav-item" id="search-btn">
+                <a class="nav-link" target="_self" href="javascript:;" data-toggle="modal" data-target="#modalSearch" aria-label="Search">
+                  <i class="iconfont icon-search"></i>
+                </a>
+              </li>
+              
+              <li class="nav-item" id="color-toggle-btn">
+                <a class="nav-link" target="_self" href="javascript:;" aria-label="Color Toggle">
+                  <i class="iconfont icon-dark" id="color-toggle-icon"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <div id="banner" class="banner" parallax=true
+           style="background: url('/img/default.png') no-repeat center center; background-size: cover;">
+        <div class="full-bg-img">
+          <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+            <div class="banner-text text-center fade-in-up">
+              <div class="h2">
+                <span id="subtitle" data-typed-text="个人简历"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="container nopadding-x-md">
+      <div id="board">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-md-10 m-auto">
+              <article class="page-content">
+                <!-- 个人信息 -->
+                <section class="resume-section">
+                  <h2 class="section-title"><i class="iconfont icon-user"></i> 个人信息</h2>
+                  <div class="row">
+                    <div class="col-md-8 contact-info">
+                      <table class="table table-borderless">
+                        <tbody>
+                          <tr>
+                            <td><strong>姓名：</strong>咔咔咔迪斯科</td>
+                            <td><strong>职业：</strong>高级移动端开发工程师</td>
+                          </tr>
+                          <tr>
+                            <td><strong>邮箱：</strong><a href="mailto:bt85049522@gmail.com">bt85049522@gmail.com</a></td>
+                            <td><strong>GitHub：</strong><a href="https://github.com/lalaluya" target="_blank">github.com/lalaluya</a></td>
+                          </tr>
+                          <tr>
+                            <td><strong>电话：</strong>+86 138-XXXX-XXXX</td>
+                            <td><strong>城市：</strong>北京</td>
+                          </tr>
+                          <tr>
+                            <td colspan="2"><strong>博客：</strong><a href="/">咔咔咔迪斯科的博客</a></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <div class="col-md-4 text-center">
+                      <img src="/img/avatar.png" alt="头像" class="img-fluid rounded-circle" style="max-width: 150px; border: 3px solid var(--link-hover-color);">
+                    </div>
+                  </div>
+                </section>
+
+                <!-- 专业技能 -->
+                <section class="resume-section">
+                  <h2 class="section-title"><i class="iconfont icon-tools"></i> 专业技能</h2>
+                  <div class="row">
+                    <div class="col-md-6">
+                      <h5><i class="iconfont icon-apple"></i> iOS开发</h5>
+                      <ul>
+                        <li>熟练掌握Swift/Objective-C编程语言</li>
+                        <li>深入理解iOS SDK及各种Framework</li>
+                        <li>丰富的App开发与维护经验</li>
+                        <li>熟悉App Store发布流程</li>
+                      </ul>
+                      
+                      <h5><i class="iconfont icon-android"></i> Android开发</h5>
+                      <ul>
+                        <li>熟练使用Kotlin/Java进行开发</li>
+                        <li>熟悉Android SDK及主流框架</li>
+                        <li>了解Material Design设计规范</li>
+                        <li>熟悉Google Play发布流程</li>
+                      </ul>
+                    </div>
+                    <div class="col-md-6">
+                      <h5><i class="iconfont icon-code"></i> 编程技能</h5>
+                      <ul>
+                        <li>熟悉常用数据结构与算法</li>
+                        <li>掌握多线程编程与网络通信</li>
+                        <li>了解设计模式与架构思想</li>
+                        <li>具备良好的代码规范意识</li>
+                      </ul>
+                      
+                      <h5><i class="iconfont icon-tool"></i> 工具与技术</h5>
+                      <ul>
+                        <li>版本控制：Git、SVN</li>
+                        <li>开发工具：Xcode、Android Studio、VS Code</li>
+                        <li>调试工具：Instruments、Android Profiler</li>
+                        <li>其他：CocoaPods、Gradle、Fastlane</li>
+                      </ul>
+                    </div>
+                  </div>
+                </section>
+
+                <!-- 工作经历 -->
+                <section class="resume-section">
+                  <h2 class="section-title"><i class="iconfont icon-briefcase"></i> 工作经历</h2>
+                  <div class="experience-item">
+                    <h4>高级移动端开发工程师 <small class="text-muted">- 某知名科技公司</small></h4>
+                    <div class="duration text-muted">2020年6月 - 至今</div>
+                    <ul>
+                      <li>主导公司核心产品的移动端架构设计与技术选型</li>
+                      <li>带领5人开发团队，负责iOS和Android双平台开发</li>
+                      <li>优化应用启动速度30%，显著提升用户体验</li>
+                      <li>建立并完善移动端CI/CD流程，提高发布效率</li>
+                      <li>推动团队技术升级，引入SwiftUI和Jetpack Compose</li>
+                      <li>与产品经理紧密合作，参与产品规划和需求分析</li>
+                    </ul>
+                  </div>
+                  
+                  <div class="experience-item">
+                    <h4>移动端开发工程师 <small class="text-muted">- 某互联网公司</small></h4>
+                    <div class="duration text-muted">2018年3月 - 2020年5月</div>
+                    <ul>
+                      <li>独立完成多个重要功能模块的开发与维护</li>
+                      <li>重构核心代码，提高系统稳定性和可维护性</li>
+                      <li>优化内存使用，减少应用崩溃率25%</li>
+                      <li>参与制定团队编码规范，提升代码质量</li>
+                      <li>协助测试团队搭建自动化测试环境</li>
+                    </ul>
+                  </div>
+                  
+                  <div class="experience-item">
+                    <h4>初级软件工程师 <small class="text-muted">- 某软件公司</small></h4>
+                    <div class="duration text-muted">2016年7月 - 2018年2月</div>
+                    <ul>
+                      <li>参与企业级移动应用开发项目</li>
+                      <li>学习并掌握移动端开发基础技能</li>
+                      <li>协助完成项目文档编写和技术支持工作</li>
+                      <li>快速适应团队协作开发模式</li>
+                    </ul>
+                  </div>
+                </section>
+
+                <!-- 项目经验 -->
+                <section class="resume-section">
+                  <h2 class="section-title"><i class="iconfont icon-project"></i> 项目经验</h2>
+                  
+                  <div class="project-item">
+                    <h4>电商平台App <small class="text-muted">- 核心开发者</small></h4>
+                    <div class="duration text-muted">2021年3月 - 2022年8月</div>
+                    <ul>
+                      <li>主导商品展示、购物车、订单管理等核心模块开发</li>
+                      <li>集成个性化推荐算法，提升用户转化率15%</li>
+                      <li>优化首屏加载速度，从3.2秒降至1.8秒</li>
+                      <li>实现支付系统，支持多种支付方式</li>
+                      <li>技术栈：Swift, UIKit, RxSwift, Alamofire</li>
+                    </ul>
+                  </div>
+                  
+                  <div class="project-item">
+                    <h4>社交娱乐App <small class="text-muted">- 主要开发者</small></h4>
+                    <div class="duration text-muted">2019年1月 - 2020年12月</div>
+                    <ul>
+                      <li>负责即时通讯功能开发，支持文字、语音、视频消息</li>
+                      <li>实现多媒体消息传输功能，优化传输效率40%</li>
+                      <li>设计并实现图片加载和缓存机制</li>
+                      <li>集成第三方登录和分享功能</li>
+                      <li>技术栈：Kotlin, Jetpack, WebSocket, Glide</li>
+                    </ul>
+                  </div>
+                  
+                  <div class="project-item">
+                    <h4>企业办公协同App <small class="text-muted">- 开发者</small></h4>
+                    <div class="duration text-muted">2018年6月 - 2019年12月</div>
+                    <ul>
+                      <li>参与任务管理、日程安排等功能模块开发</li>
+                      <li>实现离线数据同步功能</li>
+                      <li>优化数据库查询性能，提升响应速度35%</li>
+                      <li>适配多种屏幕尺寸和系统版本</li>
+                      <li>技术栈：Objective-C, CoreData, AFNetworking</li>
+                    </ul>
+                  </div>
+                </section>
+
+                <!-- 教育背景 -->
+                <section class="resume-section">
+                  <h2 class="section-title"><i class="iconfont icon-education"></i> 教育背景</h2>
+                  <div class="education-item">
+                    <h4>计算机科学与技术 (本科) <small class="text-muted">- 某某大学</small></h4>
+                    <div class="duration text-muted">2014年9月 - 2018年6月</div>
+                    <p><strong>学位：</strong>工学学士</p>
+                    <p><strong>主修课程：</strong>数据结构与算法、操作系统、计算机网络、数据库原理、软件工程、移动应用开发等</p>
+                    <p><strong>荣誉奖项：</strong>校级优秀毕业生、多次获得学业奖学金</p>
+                  </div>
+                  
+                  <div class="education-item">
+                    <h4>在线学习与认证</h4>
+                    <ul>
+                      <li>Apple Developer Academy - iOS开发高级课程认证</li>
+                      <li>Google Developers - Android开发专家认证</li>
+                      <li>极客时间 - 移动端架构设计与性能优化专栏</li>
+                    </ul>
+                  </div>
+                </section>
+
+                <!-- 自我评价 -->
+                <section class="resume-section">
+                  <h2 class="section-title"><i class="iconfont icon-heart"></i> 自我评价</h2>
+                  <ul>
+                    <li>热爱技术，对移动端开发充满热情，具有良好的编码习惯和代码规范意识</li>
+                    <li>具备较强的学习能力和解决问题的能力，能够快速掌握新技术并应用于实际项目</li>
+                    <li>善于团队协作，能够有效地与产品、设计、测试等团队成员沟通合作</li>
+                    <li>关注新技术发展，持续提升自身技术水平，积极分享技术经验</li>
+                    <li>注重用户体验，致力于打造高质量、高性能的移动应用产品</li>
+                  </ul>
+                </section>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <a id="scroll-top-button" aria-label="TOP" href="#" role="button">
+      <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+    </a>
+
+    <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+         aria-hidden="true">
+      <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header text-center">
+            <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+            <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body mx-3">
+            <div class="md-form mb-5">
+              <input type="text" id="local-search-input" class="form-control validate">
+              <label data-error="x" data-success="v" for="local-search-input">关键词</label>
+            </div>
+            <div class="list-group" id="local-search-result"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-content">
+        <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> 
+        <i class="iconfont icon-love"></i> 
+        <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script  src="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+  <script  src="https://lib.baomitu.com/jquery/3.6.4/jquery.min.js" ></script>
+  <script  src="https://lib.baomitu.com/twitter-bootstrap/4.6.1/js/bootstrap.min.js" ></script>
+  <script  src="/js/events.js" ></script>
+  <script  src="/js/plugins.js" ></script>
+
+  <script  src="https://lib.baomitu.com/typed.js/2.0.12/typed.min.js" ></script>
+  <script>
+    (function (window, document) {
+      var typing = Fluid.plugins.typing;
+      var subtitle = document.getElementById('subtitle');
+      if (!subtitle || !typing) {
+        return;
+      }
+      var text = subtitle.getAttribute('data-typed-text');
+      
+        typing(text);
+      
+    })(window, document);
+  </script>
+
+  <script  src="/js/img-lazyload.js" ></script>
+  <script  src="/js/local-search.js" ></script>
+
+  <!-- 主题的启动项，将它保持在最底部 -->
+  <script  src="/js/boot.js" ></script>
+
+  <script>
+    // 添加滚动动画效果
+    document.addEventListener('DOMContentLoaded', function() {
+      const sections = document.querySelectorAll('.resume-section');
+      
+      // 初始化时显示第一个区块
+      if (sections.length > 0) {
+        sections[0].style.opacity = '1';
+      }
+      
+      // 滚动监听动画
+      const observerOptions = {
+        root: null,
+        rootMargin: '0px',
+        threshold: 0.1
+      };
+      
+      const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.style.opacity = '1';
+            entry.target.style.transform = 'translateY(0)';
+          }
+        });
+      }, observerOptions);
+      
+      sections.forEach(section => {
+        observer.observe(section);
+      });
+      
+      // 为联系信息添加点击效果
+      const contactLinks = document.querySelectorAll('.contact-info a');
+      contactLinks.forEach(link => {
+        link.addEventListener('mouseenter', function() {
+          this.parentElement.style.transform = 'translateX(5px)';
+        });
+        
+        link.addEventListener('mouseleave', function() {
+          this.parentElement.style.transform = 'translateX(0)';
+        });
+      });
+    });
+  </script>
+
+  <noscript>
+    <div class="noscript-warning">博客在允许 JavaScript 运行的环境下浏览效果更佳</div>
+  </noscript>
+</body>
+</html>
