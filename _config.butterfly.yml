@@ -1,0 +1,179 @@
+nav:
+  logo:
+  display_title: true
+  display_post_title: true
+  fixed: true
+
+menu:
+  "\u9996\u9875": / || fas fa-house
+  "\u5f52\u6863": /archives/ || fas fa-box-archive
+  "\u5206\u7c7b": /categories/ || fas fa-folder-open
+  "\u6807\u7b7e": /tags/ || fas fa-tags
+  "\u5173\u4e8e": /about/ || fas fa-user
+
+favicon: /img/fluid.png
+
+avatar:
+  img: /img/avatar.png
+  effect: true
+
+index_img: /img/default.png
+archive_img: /img/default.png
+tag_img: /img/default.png
+category_img: /img/default.png
+default_top_img: /img/default.png
+footer_img: false
+
+subtitle:
+  enable: true
+  effect: true
+  sub:
+    - "\u6280\u672f\u7b14\u8bb0\uff0c\u957f\u671f\u79ef\u7d2f"
+    - "\u4e2a\u4eba\u535a\u5ba2\uff0c\u4e5f\u505a\u6bcf\u65e5\u79d1\u6280\u901f\u62a5"
+    - "\u5173\u6ce8 iOS\u3001Android \u4e0e\u8f6f\u4ef6\u5de5\u7a0b"
+
+index_layout: 3
+
+index_post_content:
+  method: 3
+  length: 180
+
+post_meta:
+  page:
+    date_type: created
+    date_format: date
+    categories: true
+    tags: true
+    label: true
+  post:
+    position: left
+    date_type: both
+    date_format: date
+    categories: true
+    tags: true
+    label: true
+
+social:
+  fab fa-github: https://github.com/lalaluya || GitHub || '#24292e'
+
+aside:
+  enable: true
+  hide: false
+  button: true
+  mobile: true
+  position: right
+  display:
+    archive: true
+    tag: true
+    category: true
+  card_author:
+    enable: true
+    description: "\u5206\u4eab\u6280\u672f\u5b66\u4e60\u3001\u9879\u76ee\u5b9e\u8df5\u548c\u6bcf\u65e5\u79d1\u6280\u901f\u62a5"
+    button:
+      enable: true
+      icon: fab fa-github
+      text: GitHub
+      link: https://github.com/lalaluya
+  card_announcement:
+    enable: true
+    content: "\u8fd9\u91cc\u65e2\u5199\u4e2a\u4eba\u6280\u672f\u6587\u7ae0\uff0c\u4e5f\u6301\u7eed\u66f4\u65b0\u79d1\u6280\u65b0\u95fb\u901f\u62a5\u3002"
+  card_recent_post:
+    enable: true
+    limit: 6
+    sort: date
+  card_categories:
+    enable: true
+    limit: 10
+    expand: true
+  card_tags:
+    enable: true
+    limit: 30
+    color: true
+    orderby: random
+    order: 1
+  card_archives:
+    enable: true
+    type: monthly
+    format: MMMM YYYY
+    order: -1
+    limit: 12
+  card_webinfo:
+    enable: true
+    post_count: true
+    last_push_date: true
+    runtime_date: 2024-12-13 00:00:00
+
+search:
+  use: local_search
+  placeholder: "\u641c\u7d22\u6587\u7ae0\u3001\u5206\u7c7b\u6216\u79d1\u6280\u901f\u62a5"
+  local_search:
+    preload: false
+    top_n_per_article: 2
+    unescape: false
+    pagination:
+      enable: true
+      hitsPerPage: 8
+
+comments:
+  use:
+
+share:
+  use: sharejs
+  sharejs:
+    sites: weibo,wechat,qq
+
+toc:
+  post: true
+  page: false
+  number: true
+  expand: false
+  style_simple: false
+  scroll_percent: true
+
+wordcount:
+  enable: false
+
+busuanzi:
+  site_uv: true
+  site_pv: true
+  page_pv: true
+
+footer:
+  owner:
+    enable: true
+    since: 2024
+  copyright:
+    enable: true
+    version: true
+  custom_text: "\u4ee5\u6280\u672f\u6587\u7ae0\u4e3a\u4e3b\uff0c\u4e5f\u4fdd\u7559\u6bcf\u65e5\u79d1\u6280\u901f\u62a5\u8282\u594f"
+
+preloader:
+  enable: false
+
+darkmode:
+  enable: true
+  button: true
+  autoChangeMode: false
+
+readmode: true
+rightside_scroll_percent: true
+rounded_corners_ui: true
+enter_transitions: true
+display_mode: light
+
+cover:
+  index_enable: true
+  aside_enable: true
+  archives_enable: true
+  default_cover:
+    - /img/default.png
+
+category_ui: default
+tag_ui: default
+
+lightbox: medium_zoom
+
+CDN:
+  internal_provider: local
+  third_party_provider: jsdelivr
+  version: true
