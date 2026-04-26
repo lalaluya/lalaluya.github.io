@@ -10,16 +10,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Deploy to Alibaba Cloud
-        uses: appleboy/ssh-action@v1
-        with:
-          host: ${{ secrets.HOST }}
-          username: root
-          key: ${{ secrets.SSH_KEY }}
-          port: 22
-          script: |
-            cd /home/www/blog
-            rm -rf *
-            git clone https://github.com/lalaluya/lalaluya.github.io.git temp
-            cp -r temp/* .
-            rm -rf temp
+      - name: Debug key
+        run: |
+          echo "Key starts with: ${{ secrets.SSH_KEY | slice: 0, 30 }}"
+          echo "Key length: ${{ secrets.SSH_KEY | size }}"
