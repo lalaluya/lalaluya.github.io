@@ -10,6 +10,11 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      - name: Debug info
+        run: |
+          echo "Host: ${{ secrets.HOST }}"
+          echo "Password length: {{ secrets.PASSWORD }}"
+
       - name: Deploy to Alibaba Cloud
         uses: appleboy/ssh-action@v1
         with:
@@ -19,7 +24,4 @@ jobs:
           port: 22
           script: |
             cd /home/www/blog
-            rm -rf *
-            git clone https://github.com/lalaluya/lalaluya.github.io.git temp
-            cp -r temp/* .
-            rm -rf temp
+            ls -la
