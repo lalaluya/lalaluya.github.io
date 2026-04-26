@@ -1,0 +1,25 @@
+name: Deploy to Server
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Deploy to Alibaba Cloud
+        uses: appleboy/ssh-action@v1
+        with:
+          host: ${{ secrets.HOST }}
+          username: root
+          password: ${{ secrets.PASSWORD }}
+          port: 22
+          script: |
+            cd /home/www/blog
+            rm -rf *
+            git clone https://github.com/lalaluya/lalaluya.github.io.git temp
+            cp -r temp/* .
+            rm -rf temp
