@@ -12,5 +12,15 @@ jobs:
 
       - name: Debug key
         run: |
-          echo "Key starts with: ${{ secrets.SSH_KEY | slice: 0, 30 }}"
-          echo "Key length: ${{ secrets.SSH_KEY | size }}"
+          echo "Key is set: ${{ secrets.SSH_KEY != '' }}"
+
+      - name: Deploy to Alibaba Cloud
+        uses: appleboy/ssh-action@v1
+        with:
+          host: ${{ secrets.HOST }}
+          username: root
+          key: ${{ secrets.SSH_KEY }}
+          port: 22
+          script: |
+            cd /home/www/blog
+            ls -la
